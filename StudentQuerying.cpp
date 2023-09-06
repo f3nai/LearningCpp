@@ -38,7 +38,7 @@ void LoadList(int amount){
         // we set i (index) as 1, because if we set it to 0 there will be for example x + 1 amount of students since we include 0 too
         if (i == amount) {
             // if the current index number is the final number (amount argument) we end it with something different from normally how we would end
-            std::cout << i << " | Finished loading! total of " << amount << " students were queried.";
+            std::cout << i << " | Finished loading! total of " << amount << " students were queried." << std::endl;
         } else {
             // and this is for regulars, we don't use str::endl since we want for them to be next to eachother like 1-2-3-4-, etc..
             std::cout << i << "-";
@@ -68,7 +68,7 @@ int main() {
     do{
         int classroom;
         // declare our classroom input variable
-        std::cout << "Enter class you'd like to load";
+        std::cout << "Enter class you'd like to load: ";
         // print enter which class
         std::cin >> classroom;
         // capture the user input and cast it to the classroom int variable
@@ -97,7 +97,7 @@ int main() {
                 }
             default:
                 // and if we don't find any cases matching to 1,2 or 3 we run this section of the code block
-                std::cout << "Invalid class!";
+                std::cout << "Invalid class!" << std::endl;
                 break;
         }
 
